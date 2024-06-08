@@ -9,7 +9,4 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :home, only: %i[index]
-  resources :music, only: %i[index]
-  resources :about, only: %i[index]
-  resources :contact, only: %i[index]
 end

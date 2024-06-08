@@ -2,6 +2,37 @@ body {
     background-color: black;
 }
 
+.flex { 
+    display: flex;
+}
+
+.panel-1 {
+    flex: 1;
+    background-image: url('styled_helmet.png');
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    background-size: auto 50%;
+    background-position-x: 30%;
+}
+
+.panel-2 {
+    flex: 1;
+    flex-grow: 4;
+}
+
+
+.panel-3 {
+    flex: 1;
+    background-image: url('styled_helmet.png');
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position-x: 30%;
+}
+
 .header { 
     background-color: grey;
     padding: 0.25rem;
@@ -31,15 +62,16 @@ body {
     }
 }
 
-.no-link-style {
-    text-decoration: none;
+.link-pointer {
+    cursor: pointer;
 }
 
 .body-contents {
     background-color: grey;
     border-radius: 1rem;
     padding: 1rem;
-
+    height: 400px;
+    margin-top: 1rem;
 }
 
 .header-margin-0 {
