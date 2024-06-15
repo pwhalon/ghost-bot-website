@@ -1,5 +1,16 @@
 body { 
     background-color: black;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('helmet_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    scroll-margin-top: 125px;
 }
 
 .flex { 
@@ -8,36 +19,27 @@ body {
 
 .panel-1 {
     flex: 1;
-    background-image: url('styled_helmet.png');
-    background-repeat: no-repeat;
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -moz-transform:scaleX(-1);
-    -ms-transform:scaleX(-1);
-    -o-transform:scaleX(-1);
-    background-size: auto 50%;
-    background-position-x: 30%;
 }
 
 .panel-2 {
     flex: 1;
-    flex-grow: 4;
+    flex-grow: 3;
 }
 
 
 .panel-3 {
     flex: 1;
-    background-image: url('styled_helmet.png');
-    background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-position-x: 30%;
+}
+
+.header-section {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .header { 
     background-color: grey;
     padding: 0.25rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
 }
 
 .header-flex {
@@ -64,6 +66,11 @@ body {
 
 .link-pointer {
     cursor: pointer;
+}
+
+.body-section {
+    margin-top: 8rem;
+    border: 2px;
 }
 
 .body-contents {

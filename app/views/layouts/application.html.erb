@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GhostBotWebsite</title>
+    <title>Ghost Bot</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +10,17 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+
+  <div class="header-section">
+      <div class="header">
+          <div class="header-flex">
+              <a href="/"><img src="/assets/GhostBot_scrawl_0001_transparent.png" width="200" height="100"/></a>
+              <div class="link-pointer" onclick='scrollToElement("music_section")'><div class="header-list-item">Music</div></div>
+              <div class="link-pointer" onclick='scrollToElement("about_section")'><div class="header-list-item">About</div></div>
+              <div class="link-pointer" onclick='scrollToElement("contact_section")'><div class="header-list-item">Contact</div></div>
+          </div>
+      </div>
+  </div>
 
   <body>
     <%= yield %>
