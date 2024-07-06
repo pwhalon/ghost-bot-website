@@ -77,8 +77,9 @@ body {
 
 .body-contents {
     background-color: #1a1a1a;
-    border-radius: 1rem;
-    border: solid 1rem black;
+    border: solid 0.5rem black;
+    border-right-color: #1c1c1c;
+    border-bottom-color: #1c1c1c;
     box-shadow: rgb(216, 78, 221) 1px 1px 10px inset;
     padding: 1rem;
     margin-top: 1rem;
