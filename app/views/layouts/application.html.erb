@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GhostBotWebsite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= favicon_link_tag '/assets/AC_logo_v0001_high.png' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <header class="header">
+    <div class="header-flex">
+        <a href="/"><img src="/assets/GhostBot_scrawl_0001_transparent.png" width="200" height="100"/></a>
+        <a class="no-link-style" href="/music"><div class="header-list-item">Music</div></a>
+        <a class="no-link-style" href="/about"><div class="header-list-item">About</div></a>
+        <a class="no-link-style" href="/contact"><div class="header-list-item">Contact</div></a>
+    </div>
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
